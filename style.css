@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+    background-color: #C0D2CC;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: #004155;
+}
+
+nav {
+    color: white;
+    font-size: 1.3rem;
+}
+
+ul {
+    display: flex;
+    flex-flow: nowrap;
+    flex-direction: row;
+    justify-content:flex-end;
+    list-style: none;
+}
+
+ul .wow {
+    background-color: #004155;
+}
+
+li {
+    padding:10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: #004155;
+}
+
+nav a:active {
+    background-color: #EDE937;
+    color: #004155;
+}
+
+#logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#title {
+    position: absolute;
+    top:35%;
+    left:3%;
+    padding: 1rem;
+    width: 35%;
+}
+
+h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+
+/*Slides with challenges*/
+
+#all_slides {
+}
+
+.slide {
+    border: 3px white solid;
+    height: 400px;
+    width: 600px;
+    border-radius: 1rem;
+    position: absolute;
+    margin: 1rem;
+}
+
+.position1 {
+    z-index: 1;
+    left: 40%;
+    top: 24%;
+}
+
+.position2 {
+    z-index: 2;
+    left: 42%;
+    top: 26%
+}
+
+.position3 {
+    z-index: 3;
+    left: 44%;
+    top: 28%;
+}
+
+.position4 {
+    z-index: 4;
+    left: 46%;
+    top: 30%
+}
+
+.position5 {
+    z-index: 5;
+    left: 48%;
+    top: 32%;
+}
