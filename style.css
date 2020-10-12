@@ -5,19 +5,36 @@ body {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     color: #004155;
+    margin: 0px;
+    overflow-x: hidden
+}
+
+button {
+    background-color: #004155;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 100;
+    border: none;
+    color: white;
+    outline: none;
 }
 
 nav {
     color: white;
     font-size: 1.3rem;
+    position: sticky;
+    z-index: 5;
+    top: 0;
 }
 
 ul {
     display: flex;
     flex-flow: nowrap;
     flex-direction: row;
-    justify-content:flex-end;
+    justify-content: flex-end;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 ul .wow {
@@ -25,7 +42,7 @@ ul .wow {
 }
 
 li {
-    padding:10px;
+    padding: 10px;
 }
 
 nav a {
@@ -34,28 +51,35 @@ nav a {
     padding: 10px;
 }
 
-nav a:hover {
+nav a:hover,
+nav li:hover, button:hover {
     background-color: #004155;
+    border: none;
 }
 
-nav a:active {
+nav a:active,
+nav li:active, button:active {
     background-color: #EDE937;
     color: #004155;
+    border: none;
 }
 
 #logo {
     position: absolute;
+    z-index: 5;
     top: 10px;
     left: 10px;
 }
 
 #title {
     position: absolute;
-    top:35%;
-    left:3%;
+    top: 35%;
+    left: 3%;
     padding: 1rem;
     width: 35%;
 }
+
+/*Text Decoration*/
 
 h1 {
     font-family: 'Merriweather', serif;
@@ -63,10 +87,19 @@ h1 {
     text-transform: capitalize;
 }
 
+h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
 /*Slides with challenges*/
 
-#all_slides {
-}
+#all_slides {}
 
 .slide {
     border: 3px white solid;
@@ -105,4 +138,67 @@ h1 {
     z-index: 5;
     left: 48%;
     top: 32%;
+}
+
+
+/*Grid on index page*/
+
+.content {
+    display: grid;
+    grid-gap: 4vw;
+    grid-template-columns: 40vw 40vw;
+    grid-template-areas:
+        "article article"
+        "pic1 desc1"
+        "desc2 pic2"
+        "gallery gallery"
+        "footer footer";
+    margin-left: 7vw;
+    margin-right: 7vw;
+    text-align: center;
+}
+
+header {
+    border: 1px solid grey;
+    background-color: grey;
+    position: inherit;
+    height: 400px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+article {
+    grid-area: article;
+    border: 1px solid blue;
+}
+
+.picture1 {
+    grid-area: pic1;
+    border: 1px solid green;
+}
+
+.description1 {
+    grid-area: desc1;
+    border: 1px solid red;
+}
+
+.picture2 {
+    grid-area: pic2;
+    border: 1px solid pink;
+}
+
+.description2 {
+    grid-area: desc2;
+    border: 1px solid black;
+}
+
+.gallery {
+    grid-area: gallery;
+}
+
+footer {
+    grid-area: footer;
+    border: 1px solid brown;
 }
