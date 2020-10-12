@@ -21,6 +21,19 @@ button {
     font-family: 'Lato', sans-serif;
 }
 
+p > a {
+    color:#EDE937;
+    padding: 1px;
+}
+
+p > a:hover {
+    background-color: #004155;
+}
+
+p > a:active {
+    background-color: #EDE937;
+}
+
 nav {
     color: white;
     font-size: 1.3rem;
@@ -108,6 +121,8 @@ h3 {
 p {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+    line-height: 1.4rem;
+    letter-spacing: 1px;
 }
 
 /*Images*/
@@ -129,6 +144,7 @@ p {
     border-radius: 1rem;
     position: absolute;
     margin: 1rem;
+    padding: 1rem;
 }
 
 .position1 {
@@ -161,6 +177,25 @@ p {
     top: 32%;
 }
 
+#one {
+    background-color: #B7CAD4;
+}
+
+#two {
+    background-color: #8F8582;
+}
+
+#three {
+    background-color: #3C6359;
+}
+
+#four {
+    background-image: image();
+}
+
+#five {
+    background-image: image();
+}
 
 /*Grid on index page*/
 
@@ -192,7 +227,6 @@ header {
 
 article {
     grid-area: article;
-    border: 1px solid blue;
 }
 
 .picture1 {
