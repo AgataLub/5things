@@ -5,7 +5,11 @@ var zIndex = 1;
 function bringFront() {
     console.log("bringFront");
 
-    document.querySelector("#one").style.zIndex = zIndex + "+1";
+
+
+    document.querySelector("#one").style.zIndex = zIndex;
+
+    console.log(zIndex);
 }
 
 function loadScreen() {
