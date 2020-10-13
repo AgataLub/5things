@@ -5,9 +5,9 @@ var zIndex = 1;
 function bringFront() {
     console.log("bringFront");
 
+zIndex = zIndex + 1;
 
-
-    document.querySelector("#one").style.zIndex = zIndex;
+    this.style.zIndex = zIndex;
 
     console.log(zIndex);
 }
