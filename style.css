@@ -2,8 +2,6 @@
 
 body {
     background-color: #ffffff;
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
     color: #004155;
     margin: 0px;
     overflow-x: hidden
@@ -157,12 +155,10 @@ p {
 #all_slides {}
 
 .slide {
-    border: 3px white solid;
     height: 400px;
     width: 600px;
     border-radius: 1rem;
     position: absolute;
-    margin: 1rem;
     padding: 1rem;
 }
 
