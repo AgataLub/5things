@@ -397,3 +397,31 @@ video {
     left: 0px;
     z-index: 1;
 }
+
+.curve-left1 {
+    width: 40vw;
+    height: 191vh;
+    background-image: url(svg/shape%201.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    left: 0px;
+    z-index: -1;
+    top: 0;
+
+
+}
+
+.curve-right1 {
+    width: 30vw;
+    height: 191vh;
+    background-image: url(svg/shape%202.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    right: 0px;
+    z-index: -1;
+    top: 0;
+}
