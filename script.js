@@ -1,6 +1,16 @@
 window.addEventListener("load", loadScreen);
 
-var zIndex = 1;
+let zIndex = 1;
+
+function loadScreen() {
+    console.log("loadScreen");
+
+    document.querySelector("#one").addEventListener("click", bringFront);
+    document.querySelector("#two").addEventListener("click", bringFront);
+    document.querySelector("#three").addEventListener("click", bringFront);
+    document.querySelector("#four").addEventListener("click", bringFront);
+    document.querySelector("#five").addEventListener("click", bringFront);
+}
 
 function bringFront() {
     console.log("bringFront");
@@ -12,15 +22,6 @@ zIndex = zIndex + 1;
     console.log(zIndex);
 }
 
-function loadScreen() {
-    console.log("loadScreen");
-
-    document.querySelector("#one").addEventListener("click", bringFront);
-    document.querySelector("#two").addEventListener("click", bringFront);
-    document.querySelector("#three").addEventListener("click", bringFront);
-    document.querySelector("#four").addEventListener("click", bringFront);
-    document.querySelector("#five").addEventListener("click", bringFront);
-}
 
 let vid = document.querySelector("#video");
 
