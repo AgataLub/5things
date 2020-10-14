@@ -320,3 +320,32 @@ footer {
 }
 
 
+/*VIDEO*/
+
+video {
+	height: 100vh;
+	left: 0;
+	object-fit: cover;
+	top: 0;
+	width: 100%;
+}
+
+
+.video-text-container {
+    margin-top: 5vw;
+}
+
+.play {
+    width: 8vw;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 7vw;
+}
+
+.play:hover {
+
+    width: 14vw;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 5vw;
+}
