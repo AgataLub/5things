@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 body {
-    background-color: #C0D2CC;
+    background-color: #ffffff;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     color: #004155;
@@ -22,7 +22,7 @@ button {
 }
 
 button > a {
-    color:white;
+    color: white;
 }
 
 p > a {
@@ -86,7 +86,7 @@ button:hover {
 }
 
 #logo {
-    position:absolute;
+    position: absolute;
     z-index: 5;
     top: 10px;
     left: 10px;
@@ -138,7 +138,7 @@ p {
 }
 
 .gallery > img:hover {
-    filter:brightness(110%);
+    filter: brightness(110%);
 }
 
 /*Slides with challenges*/
@@ -161,8 +161,8 @@ p {
 }
 
 .slide:hover {
-	-webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .position1 {
@@ -236,7 +236,7 @@ p {
     background-image: url("img/woman.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position:center;
+    background-position: center;
     height: 90vh;
     width: 100%;
     top: 0px;
@@ -251,8 +251,8 @@ article {
 .picture1 {
     grid-area: pic1;
     background-image: url(img/people1.png);
-    background-size:cover;
-    background-repeat:no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
     min-height: 50vh;
 }
@@ -265,8 +265,8 @@ article {
 .picture2 {
     grid-area: pic2;
     background-image: url(img/people2.png);
-    background-size:cover;
-    background-repeat:no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
     min-height: 50vh;
 }
@@ -299,35 +299,38 @@ footer {
  * ----------------------------------------
  */
 @-webkit-keyframes slide-top {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  100% {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
-  }
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px);
+    }
 }
+
 @keyframes slide-top {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  100% {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
-  }
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px);
+    }
 }
 
 
 /*VIDEO*/
 
 video {
-	height: 100vh;
-	left: 0;
-	object-fit: cover;
-	top: 0;
-	width: 100%;
+    height: 100vh;
+    left: 0;
+    object-fit: cover;
+    top: 0;
+    width: 100%;
 }
 
 
@@ -348,4 +351,32 @@ video {
     text-align: center;
     vertical-align: middle;
     margin-top: 5vw;
+}
+
+/*CURVES*/
+
+.curve-left {
+    width: 40vw;
+    height: 191vh;
+    background-image: url(svg/shape%201.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    left: 0px;
+    z-index: -1;
+
+
+}
+
+.curve-right {
+    width: 30vw;
+    height: 191vh;
+    background-image: url(svg/shape%202.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    right: 0px;
+    z-index: -1;
 }
