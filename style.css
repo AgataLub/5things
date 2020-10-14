@@ -41,7 +41,7 @@ p > a:active {
 nav {
     color: white;
     font-size: 1.3rem;
-    position:relative;
+    position: relative;
     z-index: 5;
     top: 0;
 }
@@ -232,12 +232,12 @@ p {
     text-align: center;
 }
 
-header {
+.header {
     background-image: url("img/woman.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
-    height: 70vh;
+    height: 90vh;
     width: 100%;
     top: 0px;
     left: 0px;
