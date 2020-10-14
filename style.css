@@ -191,23 +191,28 @@ p {
 }
 
 #one {
-    background-color: #B7CAD4;
+    background-image: url(img/article.png);
+    background-size: cover;
 }
 
 #two {
-    background-color: #8F8582;
+    background-image: url(img/image-from-rawpixel-id-935105-original.png);
+    background-size: cover;
 }
 
 #three {
-    background-color: #3C6359;
+    background-image: url(img/mobilepay-take-your-business-to-the-next-level-with-mobile-payments.png);
+    background-size: cover;
 }
 
 #four {
-    background-color: #EDE937;
+    background-image: url(img/image-from-rawpixel-id-511741-jpeg@2x.png);
+    background-size: cover;
 }
 
 #five {
-    background-color: #C0D2CC;
+    background-image: url(img/image-from-rawpixel-id-559968-jpeg@2x.png);
+    background-size: cover;
 }
 
 /*Grid on index page*/
