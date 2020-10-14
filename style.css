@@ -39,7 +39,7 @@ p > a:active {
 }
 
 nav {
-    color: white;
+    color: #004155;
     font-size: 1.3rem;
     position: relative;
     z-index: 5;
@@ -85,11 +85,14 @@ button:hover {
     border: none;
 }
 
-#logo {
+.logo {
+    background-image: url(img/DN-logo_hvid_skrift_CMYK_small.png);
     position: absolute;
     z-index: 5;
     top: 10px;
     left: 10px;
+    width: 100%;
+    background-repeat: no-repeat;
 }
 
 #title {
@@ -379,4 +382,17 @@ video {
     position: absolute;
     right: 0px;
     z-index: -1;
+}
+
+
+.header-2 {
+    background-image: url("img/people2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
 }
