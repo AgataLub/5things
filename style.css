@@ -86,12 +86,13 @@ button:hover {
 }
 
 .logo {
-    background-image: url(img/DN-logo_hvid_skrift_CMYK_small.png);
+    background: url(img/DN-logo_hvid_skrift_CMYK_small.png);
     position: absolute;
     z-index: 5;
     top: 10px;
     left: 10px;
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
     background-repeat: no-repeat;
 }
 
