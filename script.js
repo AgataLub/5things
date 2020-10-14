@@ -45,7 +45,7 @@ function stopVideo() {
     vid.pause();
     vid.currentTime = 0;
 }
-
+/*
 function keyStroked(e) {
     console.log("Key pressed " + e.key + " (no. " + e.which + ")");
     let volume = vid.volume;
@@ -72,9 +72,7 @@ function keyStroked(e) {
             volume = 1
         }
         console.log("vol; " + volume);
-    }
-
-} else if (e.which == 40) {
+    } else if (e.which == 40) {
     volume -= 0.1;
     if (volume < 0) {
         volume = 0
@@ -82,5 +80,7 @@ function keyStroked(e) {
     console.log("vol; " + volume);
 }
 vid.volume = volume;
+
 }
+*/
 

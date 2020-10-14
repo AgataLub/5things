@@ -64,10 +64,19 @@ li {
     padding: 10px;
 }
 
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
 nav a {
     color: white;
     text-decoration: none;
     padding: 10px;
+}
+
+.subpage_menu li a {
+    color: black;
 }
 
 nav a:hover,
@@ -86,14 +95,12 @@ button:hover {
 }
 
 .logo {
-    background: url(img/DN-logo_hvid_skrift_CMYK_small.png);
     position: absolute;
     z-index: 5;
-    top: 10px;
-    left: 10px;
-    width: 100vw;
-    height: 100vh;
-    background-repeat: no-repeat;
+    top: 2%;
+    left: 1%;
+    width: 15vw;
+    height: auto;
 }
 
 #title {
@@ -246,6 +253,7 @@ p {
     top: 0px;
     left: 0px;
     z-index: 1;
+    position: relative;
 }
 
 article {
