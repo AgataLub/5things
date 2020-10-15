@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 body {
-    background-color: #C0D2CC;
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
+    background-color: #ffffff;
     color: #004155;
     margin: 0px;
     overflow-x: hidden
@@ -22,7 +20,7 @@ button {
 }
 
 button > a {
-    color:white;
+    color: white;
 }
 
 p > a {
@@ -39,9 +37,9 @@ p > a:active {
 }
 
 nav {
-    color: white;
+    color: #004155;
     font-size: 1.3rem;
-    position: sticky;
+    position: relative;
     z-index: 5;
     top: 0;
 }
@@ -64,10 +62,19 @@ li {
     padding: 10px;
 }
 
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
 nav a {
     color: white;
     text-decoration: none;
     padding: 10px;
+}
+
+.subpage_menu li a {
+    color: black;
 }
 
 nav a:hover,
@@ -85,11 +92,13 @@ button:hover {
     border: none;
 }
 
-#logo {
+.logo {
     position: absolute;
     z-index: 5;
-    top: 10px;
-    left: 10px;
+    top: 2%;
+    left: 1%;
+    width: 15vw;
+    height: auto;
 }
 
 #title {
@@ -108,13 +117,13 @@ a {
 /*Text Decoration*/
 
 h1 {
-    font-family: 'Merriweather', serif;
+    font-family: 'Lato', sans-serif;
     font-size: 3rem;
     text-transform: capitalize;
 }
 
 h2 {
-    font-family: 'Merriweather', serif;
+    font-family: 'Lato', sans-serif;
     font-size: 2rem;
 }
 
@@ -138,7 +147,7 @@ p {
 }
 
 .gallery > img:hover {
-    filter:brightness(110%);
+    filter: brightness(110%);
 }
 
 /*Slides with challenges*/
@@ -146,12 +155,10 @@ p {
 #all_slides {}
 
 .slide {
-    border: 3px white solid;
     height: 400px;
     width: 600px;
     border-radius: 1rem;
     position: absolute;
-    margin: 1rem;
     padding: 1rem;
 }
 
@@ -161,8 +168,8 @@ p {
 }
 
 .slide:hover {
-	-webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .position1 {
@@ -191,23 +198,28 @@ p {
 }
 
 #one {
-    background-color: #B7CAD4;
+    background-image: url(img/article.png);
+    background-size: cover;
 }
 
 #two {
-    background-color: #8F8582;
+    background-image: url(img/image-from-rawpixel-id-935105-original.png);
+    background-size: cover;
 }
 
 #three {
-    background-color: #3C6359;
+    background-image: url(img/mobilepay-take-your-business-to-the-next-level-with-mobile-payments.png);
+    background-size: cover;
 }
 
 #four {
-    background-color: #EDE937;
+    background-image: url(img/image-from-rawpixel-id-511741-jpeg@2x.png);
+    background-size: cover;
 }
 
 #five {
-    background-color: #C0D2CC;
+    background-image: url(img/image-from-rawpixel-id-559968-jpeg@2x.png);
+    background-size: cover;
 }
 
 /*Grid on index page*/
@@ -227,16 +239,17 @@ p {
     text-align: center;
 }
 
-header {
+.header {
     background-image: url("img/woman.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position:center;
-    height: 70vh;
+    background-position: center;
+    height: 90vh;
     width: 100%;
     top: 0px;
     left: 0px;
     z-index: 1;
+    position: relative;
 }
 
 article {
@@ -246,8 +259,8 @@ article {
 .picture1 {
     grid-area: pic1;
     background-image: url(img/people1.png);
-    background-size:cover;
-    background-repeat:no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
     min-height: 50vh;
 }
@@ -260,8 +273,8 @@ article {
 .picture2 {
     grid-area: pic2;
     background-image: url(img/people2.png);
-    background-size:cover;
-    background-repeat:no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
     min-height: 50vh;
 }
@@ -294,24 +307,125 @@ footer {
  * ----------------------------------------
  */
 @-webkit-keyframes slide-top {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  100% {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
-  }
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px);
+    }
 }
+
 @keyframes slide-top {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  100% {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
-  }
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px);
+    }
 }
 
 
+/*VIDEO*/
+
+video {
+    height: 100vh;
+    left: 0;
+    object-fit: cover;
+    top: 0;
+    width: 100%;
+}
+
+
+.video-text-container {
+    margin-top: 5vw;
+}
+
+.play {
+    width: 8vw;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 7vw;
+}
+
+.play:hover {
+
+    width: 14vw;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 5vw;
+}
+
+/*CURVES*/
+
+.curve-left {
+    width: 40vw;
+    height: 191vh;
+    background-image: url(svg/shape%201.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    left: 0px;
+    z-index: -1;
+
+
+}
+
+.curve-right {
+    width: 30vw;
+    height: 191vh;
+    background-image: url(svg/shape%202.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    right: 0px;
+    z-index: -1;
+}
+
+
+.header-2 {
+    background-image: url("img/people2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.curve-left1 {
+    width: 40vw;
+    height: 191vh;
+    background-image: url(svg/shape%201.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    left: 0px;
+    z-index: -1;
+    top: 0;
+
+
+}
+
+.curve-right1 {
+    width: 30vw;
+    height: 191vh;
+    background-image: url(svg/shape%202.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    right: 0px;
+    z-index: -1;
+    top: 0;
+}
